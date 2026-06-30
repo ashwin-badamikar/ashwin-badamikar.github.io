@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashwin Badamikar — Data &amp; AI Engineer</title>
+<meta name="description" content="Ashwin Badamikar — Data &amp; AI Engineer. MS Information Systems @ Northeastern. Building data pipelines, RAG systems, and multi-agent AI. Open to Co-op, RA, and Full-time roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">AB<span>.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="Ashwin_Badamikar_Resume.pdf" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Résumé</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow"><span class="dot dot--live"></span>Open to Co-op · Research Assistant · Full-time — available now</p>
+        <h1 class="hero__title">Ashwin<br>Badamikar</h1>
+        <p class="hero__subtitle">I turn raw data into pipelines — and pipelines into agents that can act on it.</p>
+        <p class="hero__desc">MS Information Systems candidate at Northeastern University, currently building AI-powered data tools at Aosenuma Inc. Before that, I shipped real-time ETL pipelines at TurnOn in Bengaluru. I like systems with a clear, traceable path from raw data to a decision.</p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+        <div class="hero__meta">
+          <div><span class="label">Based in</span>Boston, MA</div>
+          <div><span class="label">Program</span>MS Info. Systems, Northeastern</div>
+          <div><span class="label">Grad date</span>December 2026</div>
+        </div>
+      </div>
+
+      <div class="hero__diagram" aria-hidden="true">
+        <svg viewBox="0 0 520 440" class="pipeline-svg" role="img" aria-label="Diagram of a data pipeline flowing from raw data to an AI agent" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <line x1="60" y1="380" x2="460" y2="60" class="pipeline-guide" />
+          <path id="flowPath" d="M60,380 L155,308 L250,236 L355,148 L460,60" class="pipeline-path" />
+
+          <g class="pipeline-node" style="--d:0">
+            <circle cx="60" cy="380" r="7" class="node-dot"/>
+            <text x="60" y="408" class="node-label">INGEST</text>
+            <text x="60" y="424" class="node-sub">Kafka · Airflow</text>
+          </g>
+          <g class="pipeline-node" style="--d:1">
+            <circle cx="155" cy="308" r="7" class="node-dot"/>
+            <text x="155" y="336" class="node-label">TRANSFORM</text>
+            <text x="155" y="352" class="node-sub">dbt · Pandas</text>
+          </g>
+          <g class="pipeline-node" style="--d:2">
+            <circle cx="250" cy="236" r="7" class="node-dot"/>
+            <text x="250" y="264" class="node-label">EMBED</text>
+            <text x="250" y="280" class="node-sub">Pinecone · ChromaDB</text>
+          </g>
+          <g class="pipeline-node" style="--d:3">
+            <circle cx="355" cy="148" r="7" class="node-dot"/>
+            <text x="355" y="176" class="node-label">ORCHESTRATE</text>
+            <text x="355" y="192" class="node-sub">LangGraph</text>
+          </g>
+          <g class="pipeline-node" style="--d:4">
+            <circle cx="460" cy="60" r="9" class="node-dot node-dot--final"/>
+            <text x="460" y="34" class="node-label node-label--final">SERVE</text>
+            <text x="460" y="86" class="node-sub">FastAPI</text>
+          </g>
+
+          <circle r="4.5" class="flow-dot flow-dot--1">
+            <animateMotion dur="4.5s" repeatCount="indefinite" begin="0s">
+              <mpath href="#flowPath" xlink:href="#flowPath"/>
+            </animateMotion>
+          </circle>
+          <circle r="4.5" class="flow-dot flow-dot--2">
+            <animateMotion dur="4.5s" repeatCount="indefinite" begin="1.5s">
+              <mpath href="#flowPath" xlink:href="#flowPath"/>
+            </animateMotion>
+          </circle>
+          <circle r="4.5" class="flow-dot flow-dot--3">
+            <animateMotion dur="4.5s" repeatCount="indefinite" begin="3s">
+              <mpath href="#flowPath" xlink:href="#flowPath"/>
+            </animateMotion>
+          </circle>
+        </svg>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Python</span><span>SQL</span><span>LangGraph</span><span>LangChain</span><span>Apache Kafka</span><span>Airflow</span><span>dbt</span><span>Snowflake</span><span>Pinecone</span><span>ChromaDB</span><span>FastAPI</span><span>Streamlit</span><span>Docker</span><span>AWS</span><span>GCP</span><span>Azure</span>
+        <span>Python</span><span>SQL</span><span>LangGraph</span><span>LangChain</span><span>Apache Kafka</span><span>Airflow</span><span>dbt</span><span>Snowflake</span><span>Pinecone</span><span>ChromaDB</span><span>FastAPI</span><span>Streamlit</span><span>Docker</span><span>AWS</span><span>GCP</span><span>Azure</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__inner about__grid">
+      <div class="about__text reveal">
+        <p class="eyebrow eyebrow--mono">$ whoami</p>
+        <h2 class="section__title">Background</h2>
+        <p>I started in Computer Science Engineering at JSS Academy of Technical Education — but the part of every project I cared about most was always the data: getting it clean, getting it moving, getting it into a shape something could actually use. That pulled me toward software engineering.</p>
+        <p>At <strong>TurnOn</strong> in Bengaluru, I built real-time ETL pipelines on Apache Kafka for agriculture and construction-tech platforms — work that improved data-processing efficiency by <strong>20%</strong> and sped up downstream decisions by <strong>15%</strong>.</p>
+        <p>I'm now finishing my MS in Information Systems at Northeastern, and most recently worked as an AI Developer Intern at <strong>Aosenuma Inc.</strong>, building FastAPI services, Supabase-backed data stores, and LangGraph workflows for document intelligence — plus the observability layer that tells you when an LLM pipeline is quietly getting worse.</p>
+        <p>Outside of pipelines: I've organized large-scale student events back in Bengaluru, and I'm a fairly relentless trip planner for group travel.</p>
+
+        <div class="edu-list">
+          <div class="edu-row">
+            <div>
+              <p class="edu-school">Northeastern University</p>
+              <p class="edu-degree">MS, Information Systems · Boston, MA</p>
+            </div>
+            <p class="edu-date">Expected Dec 2026</p>
+          </div>
+          <div class="edu-row">
+            <div>
+              <p class="edu-school">JSS Academy of Technical Education</p>
+              <p class="edu-degree">BE, Computer Science Engineering · Bengaluru, India</p>
+            </div>
+            <p class="edu-date">2019 – 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="terminal reveal">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--r"></span>
+          <span class="terminal__dot terminal__dot--y"></span>
+          <span class="terminal__dot terminal__dot--g"></span>
+          <span class="terminal__title">ashwin@boston:~</span>
+        </div>
+        <div class="terminal__body" id="terminalBody">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="out">Ashwin Badamikar — Data &amp; AI Engineer (in training)</p>
+          <p><span class="prompt">$</span> cat status.txt</p>
+          <p class="out">location     : Boston, MA</p>
+          <p class="out">program      : MS Information Systems, Northeastern (exp. Dec 2026)</p>
+          <p class="out">looking_for  : Co-op · Research Assistant · Full-time</p>
+          <p class="out">stack        : Python · LangGraph · Snowflake · Airflow · FastAPI</p>
+          <p><span class="prompt">$</span> <span class="cursor">_</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section--alt" id="experience">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--mono">$ experience --timeline</p>
+      <h2 class="section__title">Where I've worked</h2>
+
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__rail"><span class="timeline__node"></span></div>
+          <div class="timeline__card">
+            <div class="timeline__head">
+              <div>
+                <h3>AI Developer Intern</h3>
+                <p class="timeline__org">Aosenuma Inc. · Remote</p>
+              </div>
+              <p class="timeline__date">Jan 2026 – Jun 2026</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Built and shipped AI-powered research tooling (StakeAI) on FastAPI, Supabase, and LangGraph — covering entity extraction, knowledge-graph generation, and document-intelligence workflows.</li>
+              <li>Added an observability layer to LLM pipelines with Helicone, tracking token usage, latency, and cost across multi-agent runs so issues surface before they reach production.</li>
+              <li>Contributed to RAG pipeline deployment, connecting LLM workflows to structured (Supabase/Postgres) and unstructured data sources.</li>
+            </ul>
+            <div class="tags">
+              <span>FastAPI</span><span>Supabase</span><span>LangGraph</span><span>RAG</span><span>Helicone</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__rail"><span class="timeline__node"></span></div>
+          <div class="timeline__card">
+            <div class="timeline__head">
+              <div>
+                <h3>Software Engineer</h3>
+                <p class="timeline__org">TurnOn · Bengaluru, India</p>
+              </div>
+              <p class="timeline__date">Jan 2023 – Jul 2024</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Built and maintained real-time ETL pipelines in Python, SQL, and Apache Kafka for the Banush and Smart Build Automation platforms, processing thousands of events per minute and lifting data-processing efficiency by 20%.</li>
+              <li>Shipped predictive models and real-time analytics dashboards that sped up downstream decision-making by 15%, and hardened pipeline reliability through automated validation and monitoring.</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Apache Kafka</span><span>SQL</span><span>ETL</span><span>Real-time Analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__rail"><span class="timeline__node"></span></div>
+          <div class="timeline__card">
+            <div class="timeline__head">
+              <div>
+                <h3>Research Assistant</h3>
+                <p class="timeline__org">JSS Academy of Technical Education · Bengaluru, India</p>
+              </div>
+              <p class="timeline__date">Sep 2022 – May 2023</p>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Investigated cross-lingual transfer learning for natural language inference on the XNLI dataset — building translation, semantic-matching, and relevance-ranking pipelines across Hindi, Gujarati, and Bengali with no existing benchmark to compare against.</li>
+              <li>Recognized at the Karnataka State Council for Science &amp; Technology (KSCST), hosted by IISc, June 2023.</li>
+            </ul>
+            <div class="tags">
+              <span>NLP</span><span>Transfer Learning</span><span>Python</span><span>Research</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--mono">$ projects --list</p>
+      <h2 class="section__title">Things I've built</h2>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="data-engineering">Data Engineering</button>
+        <button class="filter" data-filter="ai-agents">AI &amp; Agents</button>
+        <button class="filter" data-filter="research">Research</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card reveal" data-cat="ai-agents">
+          <div class="project-card__top">
+            <h3>Chronic Care AI</h3>
+            <span class="project-tag">AI &amp; Agents</span>
+          </div>
+          <p>A multi-agent assistant for chronic-disease management, built as a team project. LangGraph orchestrates four specialized agents — nutrition, knowledge-base Q&amp;A, location, and summary/alerts — over a RAG pipeline built on Pinecone and Mistral AI embeddings.</p>
+          <ul class="project-points">
+            <li>FastAPI backend, Streamlit frontend, Snowflake for structured patient and nutrition data via the Edamam API.</li>
+            <li>Airflow orchestrates ETL across S3, Snowflake, and Pinecone — health PDFs are chunked and embedded for retrieval.</li>
+          </ul>
+          <div class="tags">
+            <span>LangGraph</span><span>FastAPI</span><span>Pinecone</span><span>Snowflake</span><span>Airflow</span><span>Mistral AI</span>
+          </div>
+          <a href="https://github.com/BigDataIA-Spring2025-Team7/Big_Data_Final_Project" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card reveal" data-cat="ai-agents">
+          <div class="project-card__top">
+            <h3>Diabetes Treatment AI</h3>
+            <span class="project-tag">AI &amp; Agents</span>
+          </div>
+          <p>A reinforcement-learning system for personalized diabetes-treatment recommendations, trained on 883,000+ real patient records from the CDC BRFSS dataset.</p>
+          <ul class="project-points">
+            <li>Deep Q-Network and REINFORCE policy-gradient agents, served through a FastAPI backend with an integrated medical chatbot.</li>
+          </ul>
+          <div class="tags">
+            <span>PyTorch</span><span>Reinforcement Learning</span><span>FastAPI</span><span>Healthcare AI</span>
+          </div>
+          <a href="https://github.com/ashwin-badamikar/diabetes-treatment-ai-system" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card reveal" data-cat="data-engineering">
+          <div class="project-card__top">
+            <h3>Financial Statement Data Pipeline</h3>
+            <span class="project-tag">Data Engineering</span>
+          </div>
+          <p>An automated ingestion pipeline for SEC financial filings (10-K / 10-Q), turning raw filings into analysis-ready fact tables.</p>
+          <ul class="project-points">
+            <li>Snowflake, Airflow, and dbt handle ETL — JSON ingestion, raw staging, and denormalized fact tables.</li>
+            <li>FastAPI backend and Streamlit frontend give non-technical users self-serve access to the data.</li>
+          </ul>
+          <div class="tags">
+            <span>Snowflake</span><span>Airflow</span><span>dbt</span><span>FastAPI</span><span>Streamlit</span>
+          </div>
+          <a href="https://github.com/ashwin-badamikar" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card reveal" data-cat="ai-agents">
+          <div class="project-card__top">
+            <h3>Nutrition Tutor Bot</h3>
+            <span class="project-tag">AI &amp; Agents</span>
+          </div>
+          <p>An AI nutrition coach that combines conversational guidance with photo-based food recognition.</p>
+          <ul class="project-points">
+            <li>GPT-4 for coaching conversations, GPT-4 Vision for multimodal food-photo recognition, and RAG over a nutrition knowledge base in ChromaDB.</li>
+            <li>Streamlit interface with chat, an analytics dashboard, and a searchable nutrition database.</li>
+          </ul>
+          <div class="tags">
+            <span>GPT-4 Vision</span><span>RAG</span><span>ChromaDB</span><span>Streamlit</span>
+          </div>
+          <a href="https://github.com/ashwin-badamikar/nutrition-tutor-bot" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card reveal" data-cat="ai-agents">
+          <div class="project-card__top">
+            <h3>Advanced Research Assistant</h3>
+            <span class="project-tag">AI &amp; Agents</span>
+          </div>
+          <p>A multi-agent research system built with CrewAI, pairing a conversational web interface with specialized agents for end-to-end research automation.</p>
+          <ul class="project-points">
+            <li>Controller, Research, Analysis, and Synthesis agents coordinate to gather, evaluate, and synthesize information into structured reports.</li>
+            <li>Custom tools — a citation validator with source verification and a quality-assessment module — keep outputs reliable; GPT-4 powers the conversational layer.</li>
+          </ul>
+          <div class="tags">
+            <span>CrewAI</span><span>GPT-4</span><span>Multi-Agent</span><span>Flask</span><span>Python</span>
+          </div>
+          <a href="https://github.com/ashwin-badamikar/advanced-research-assistant" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card reveal" data-cat="data-engineering">
+          <div class="project-card__top">
+            <h3>Web Scraping &amp; Document Intelligence Tool</h3>
+            <span class="project-tag">Data Engineering</span>
+          </div>
+          <p>A full-stack tool for extracting and structuring content from PDFs and websites at scale, built as a team project for a Big Data coursework assignment.</p>
+          <ul class="project-points">
+            <li>BeautifulSoup, Selenium, PyPDF, and PyMuPDF handle extraction across web pages and documents, with Adobe Scan and Apify integrated for additional document processing.</li>
+            <li>FastAPI backend and Streamlit frontend, with extracted content and metadata indexed in AWS S3 for downstream retrieval.</li>
+          </ul>
+          <div class="tags">
+            <span>BeautifulSoup</span><span>PyMuPDF</span><span>FastAPI</span><span>Streamlit</span><span>AWS S3</span>
+          </div>
+          <a href="https://github.com/BigDataIA-Spring2025-Team7/Group7_Assignment-5_1" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        </article>
+
+        <article class="project-card reveal" data-cat="research">
+          <div class="project-card__top">
+            <h3>Cross-Lingual Transfer Learning for NLI</h3>
+            <span class="project-tag">Research</span>
+          </div>
+          <p>Research on cross-lingual transfer learning for natural language inference using the XNLI dataset — evaluating how well models trained in English generalize to Hindi, Gujarati, and Bengali.</p>
+          <ul class="project-points">
+            <li>Built query-translation, semantic-matching, and relevance-ranking pipelines with no existing benchmark to compare against.</li>
+            <li>Recognized at the Karnataka State Council for Science &amp; Technology (KSCST), hosted by IISc, June 2023.</li>
+          </ul>
+          <div class="tags">
+            <span>NLP</span><span>Transfer Learning</span><span>Research</span><span>Multilingual</span>
+          </div>
+          <span class="project-link project-link--static">Award-recognized research</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--alt" id="skills">
+    <div class="section__inner">
+      <p class="eyebrow eyebrow--mono">$ skills --stack</p>
+      <h2 class="section__title">What I work with</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <div class="chip-row">
+            <span>Python</span><span>SQL</span><span>R</span><span>C++</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Data Engineering</h3>
+          <div class="chip-row">
+            <span>Apache Kafka</span><span>Apache Airflow</span><span>dbt</span><span>PySpark</span><span>Pandas</span><span>NumPy</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>AI, GenAI &amp; Agents</h3>
+          <div class="chip-row">
+            <span>LangGraph</span><span>LangChain</span><span>RAG</span><span>GPT-4 / GPT-4 Vision</span><span>Mistral AI</span><span>Prompt Engineering</span><span>Helicone</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Databases &amp; Vector Stores</h3>
+          <div class="chip-row">
+            <span>Snowflake</span><span>PostgreSQL</span><span>MySQL</span><span>Pinecone</span><span>ChromaDB</span><span>Supabase</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Cloud &amp; DevOps</h3>
+          <div class="chip-row">
+            <span>AWS</span><span>Azure</span><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>Git</span><span>CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Apps &amp; BI</h3>
+          <div class="chip-row">
+            <span>FastAPI</span><span>Streamlit</span><span>Power BI</span><span>Tableau</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="section__inner contact__inner">
+      <p class="eyebrow eyebrow--mono">$ contact --init</p>
+      <h2 class="section__title">Let's talk</h2>
+      <p class="contact__sub">Open to Co-op, Research Assistant, and full-time roles in AI / Data Engineering — available now and through December 2026.</p>
+
+      <div class="contact__actions">
+        <a href="mailto:badamikar.a@northeastern.edu" class="btn btn--primary">Email me</a>
+        <a href="https://linkedin.com/in/ashwinbadamikar" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+        <a href="https://github.com/ashwin-badamikar" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+        <a href="Ashwin_Badamikar_Resume.pdf" target="_blank" rel="noopener" class="btn btn--ghost">Résumé</a>
+      </div>
+
+      <div class="contact__meta">
+        <span>Boston, MA</span>
+        <span>(857) 339-8797</span>
+        <span>badamikar.a@northeastern.edu</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>Ashwin Badamikar — built with HTML, CSS, and a bit of LangGraph-brain.</span>
+    <span id="year"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
